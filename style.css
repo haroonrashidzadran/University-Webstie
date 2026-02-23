@@ -7,6 +7,13 @@
     --dark-color: #1f2937;
     --light-color: #f8fafc;
     --text-color: #4b5563;
+    --border-radius-sm: 10px;
+    --border-radius-md: 20px;
+    --border-radius-lg: 50px;
+    --transition-speed: 0.3s;
+    --transition-speed-slow: 0.5s;
+    --box-shadow-sm: 0 10px 40px rgba(0, 0, 0, 0.08);
+    --box-shadow-md: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
 * {
