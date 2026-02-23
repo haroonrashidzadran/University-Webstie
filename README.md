@@ -10,35 +10,66 @@ A modern, professional university website built with HTML, CSS, Bootstrap 5, and
 
 ## 🌟 Features
 
+### Core Features
 - **Responsive Design** - Fully responsive across all devices using Bootstrap 5
 - **Modern UI/UX** - Clean, professional design with smooth animations
-- **Hero Section** - Full-screen hero with parallax background
-- **Academic Programs** - 6 program cards with hover effects
-- **Statistics Counter** - Animated counters for key metrics
+- **Hero Section** - Full-screen hero with parallax background and video option
+- **Academic Programs** - 6 program cards with hover effects and "Learn More" buttons
+- **Statistics Counter** - Animated counters for key metrics with pulse icon animations
 - **Interactive Elements** - Smooth scrolling, navbar effects, scroll-to-top button
-- **Contact Form** - Functional contact form with validation
-- **Professional Images** - High-quality images from Unsplash
+- **Contact Form** - Functional contact form with real-time validation feedback
+- **Professional Images** - High-quality images from Unsplash with lazy loading
+
+### Accessibility Features
+- **Skip-to-Content Link** - Keyboard navigation support for screen readers
+- **Focus Visible Styles** - Clear focus indicators for keyboard navigation
+- **ARIA Labels** - Proper aria-labels on all icon-only buttons and links
+- **Reduced Motion Support** - Respects `prefers-reduced-motion` media query
+- **Semantic HTML** - Proper heading hierarchy and landmark regions
+
+### Performance & UX
+- **Page Preloader** - Elegant loading spinner for initial page load
+- **Reading Progress Bar** - Visual indicator of scroll progress
+- **Dark Mode** - Toggle between light and dark themes (persisted in localStorage)
+- **Cookie Consent Banner** - GDPR-compliant cookie consent with localStorage persistence
+- **Lazy Loading** - Images load as needed for better performance
+- **Scroll Reveal Animations** - Smooth fade-in animations on scroll
+
+### Navigation
+- **Sticky Navigation** - Fixed navbar with scroll effects
+- **Active Nav Highlighting** - Visual indicator for current section
+- **Mobile Bottom Navigation** - Quick access nav bar on mobile devices
+- **Smooth Scroll** - Smooth scrolling with fixed navbar offset
 
 ## 🛠️ Technologies Used
 
 - **HTML5** - Semantic markup
-- **CSS3** - Custom styling with CSS variables
+- **CSS3** - Custom styling with CSS variables, animations, and media queries
 - **Bootstrap 5.3** - Responsive grid system and components
 - **Font Awesome 6** - Icon library
 - **Google Fonts** - Playfair Display & Poppins fonts
 - **JavaScript** - Vanilla JS for interactivity
+- **AOS Library** - Animate on scroll effects
+- **Slick Carousel** - Image gallery slider
 
 ## 📋 Sections
 
-1. **Navigation** - Sticky navbar with smooth scroll links
-2. **Hero** - Full-screen hero with call-to-action buttons
+1. **Navigation** - Sticky navbar with smooth scroll links and dark mode toggle
+2. **Hero** - Full-screen hero with call-to-action buttons and video background option
 3. **About** - University history and key features
-4. **Programs** - Academic program cards
-5. **Statistics** - Key metrics with animated counters
-6. **Admissions** - Step-by-step admission process
-7. **Testimonials** - Student testimonials
-8. **Contact** - Contact form and information
-9. **Footer** - Quick links and newsletter signup
+4. **Why Choose Us** - Icon grid highlighting university benefits
+5. **Programs** - Academic program cards with "Learn More" buttons
+6. **Statistics** - Key metrics with animated counters
+7. **Gallery** - Campus photo gallery with lightbox
+8. **Faculty** - Faculty member cards with social links
+9. **Events** - Upcoming events and news section
+10. **Admissions** - Step-by-step admission process
+11. **Scholarships** - Scholarship opportunities section
+12. **Testimonials** - Student testimonials with star ratings
+13. **FAQ** - Frequently asked questions accordion
+14. **Contact** - Contact form, information, and embedded map
+15. **Virtual Tour CTA** - Call-to-action for campus tours
+16. **Footer** - Quick links, newsletter signup, and social media
 
 ## 🚀 Getting Started
 
@@ -58,7 +89,9 @@ University-Webstie/
 ├── index.html      # Main HTML file
 ├── style.css       # Custom styles
 ├── script.js       # JavaScript functionality
-└── README.md      # This file
+├── print.css       # Print stylesheet
+├── 404.html        # Custom 404 error page
+└── README.md       # This file
 ```
 
 ## 🎨 Customization
@@ -72,6 +105,11 @@ The website uses CSS variables for easy customization:
     --accent-color: #f59e0b;
     --dark-color: #1f2937;
     --light-color: #f8fafc;
+    --border-radius-sm: 10px;
+    --border-radius-md: 20px;
+    --border-radius-lg: 50px;
+    --transition-speed: 0.3s;
+    --transition-speed-slow: 0.5s;
 }
 ```
 
@@ -84,6 +122,15 @@ All images are sourced from Unsplash. To change images, replace the URLs in the 
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
+
+## ♿ Accessibility
+
+This website follows WCAG 2.1 guidelines:
+- Keyboard navigable
+- Screen reader friendly
+- Color contrast compliant
+- Reduced motion support
+- Focus indicators visible
 
 ## 📄 License
 
@@ -98,3 +145,5 @@ Created by Prestige University Web Team
 - [Unsplash](https://unsplash.com) for professional images
 - [Bootstrap](https://getbootstrap.com) for the framework
 - [Font Awesome](https://fontawesome.com) for icons
+- [AOS Library](https://michalsnik.github.io/aos/) for scroll animations
+- [Slick Carousel](https://kenwheeler.github.io/slick/) for the gallery slider
