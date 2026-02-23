@@ -7,11 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===============================
     const navbar = document.getElementById('navbar');
     
+    // Reading progress bar
+    const readingProgress = document.getElementById('readingProgress');
+
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
+        }
+        // Update reading progress
+        if (readingProgress) {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            readingProgress.style.width = progress + '%';
         }
     });
 
