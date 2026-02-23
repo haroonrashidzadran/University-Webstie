@@ -454,6 +454,44 @@ select:focus-visible {
     margin-bottom: 0;
 }
 
+/* FAQ Section */
+.faq-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.faq-item {
+    border: none;
+    border-radius: var(--border-radius-sm) !important;
+    margin-bottom: 15px;
+    box-shadow: var(--box-shadow-sm);
+    overflow: hidden;
+}
+
+.faq-item .accordion-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: #fff;
+    padding: 20px 25px;
+}
+
+.faq-item .accordion-button:not(.collapsed) {
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: none;
+}
+
+.faq-item .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.faq-item .accordion-body {
+    padding: 20px 25px;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
 /* Events Section */
 .events-section {
     padding: 100px 0;
