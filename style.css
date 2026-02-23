@@ -454,6 +454,93 @@ select:focus-visible {
     margin-bottom: 0;
 }
 
+/* Events Section */
+.events-section {
+    padding: 100px 0;
+    background: var(--light-color);
+}
+
+.event-card {
+    background: #fff;
+    border-radius: var(--border-radius-md);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    box-shadow: var(--box-shadow-sm);
+    transition: all var(--transition-speed) ease;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-md);
+}
+
+.event-date {
+    min-width: 60px;
+    text-align: center;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: var(--border-radius-sm);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-day {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: 'Playfair Display', serif;
+}
+
+.event-month {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.event-tag {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--dark-color);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.event-content h5 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.event-content p {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.event-link {
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+}
+
+.event-link:hover {
+    color: var(--accent-color);
+}
+
 /* Faculty Section */
 .faculty-section {
     padding: 100px 0;
