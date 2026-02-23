@@ -500,6 +500,41 @@ select:focus-visible {
     margin-bottom: 0;
 }
 
+/* Virtual Tour CTA Section */
+.virtual-tour-section {
+    padding: 80px 0;
+    background: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.virtual-tour-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+}
+
+.virtual-tour-content {
+    position: relative;
+    z-index: 2;
+}
+
+.virtual-tour-content h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.virtual-tour-content p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    margin: 0;
+}
+
 /* Scholarship Section */
 .scholarship-section {
     padding: 100px 0;
