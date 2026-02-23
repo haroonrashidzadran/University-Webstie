@@ -223,6 +223,31 @@ document.addEventListener('DOMContentLoaded', function() {
     updateActiveNavLink();
 
     // ===============================
+    // Cookie Consent Banner
+    // ===============================
+    const cookieBanner = document.getElementById('cookieBanner');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieDecline = document.getElementById('cookieDecline');
+
+    if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+        setTimeout(() => cookieBanner.classList.add('show'), 1500);
+    }
+
+    if (cookieAccept) {
+        cookieAccept.addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieBanner.classList.remove('show');
+        });
+    }
+
+    if (cookieDecline) {
+        cookieDecline.addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'declined');
+            cookieBanner.classList.remove('show');
+        });
+    }
+
+    // ===============================
     // Program Card Hover Effects
     // ===============================
     const programCards = document.querySelectorAll('.program-card');
