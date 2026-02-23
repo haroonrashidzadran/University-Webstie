@@ -283,11 +283,47 @@ body.dark-mode .testimonials-section {
     background: #111827;
 }
 
+body.dark-mode .gallery-section,
+body.dark-mode .faculty-section,
+body.dark-mode .events-section,
+body.dark-mode .faq-section,
+body.dark-mode .scholarship-section {
+    background: #1f2937;
+}
+
 body.dark-mode .program-card,
 body.dark-mode .admission-card,
 body.dark-mode .contact-card,
-body.dark-mode .testimonial-card {
-    background: #1f2937;
+body.dark-mode .testimonial-card,
+body.dark-mode .faculty-card,
+body.dark-mode .event-card,
+body.dark-mode .scholarship-card {
+    background: #374151;
+    color: #d1d5db;
+}
+
+body.dark-mode .program-card h4,
+body.dark-mode .faculty-card h4,
+body.dark-mode .event-card h4,
+body.dark-mode .scholarship-card h4 {
+    color: #f9fafb;
+}
+
+body.dark-mode .gallery-item {
+    border-color: #4b5563;
+}
+
+body.dark-mode .faq-item .accordion-button {
+    background: #374151;
+    color: #f9fafb;
+}
+
+body.dark-mode .faq-item .accordion-button:not(.collapsed) {
+    background: var(--primary-color);
+}
+
+body.dark-mode .faq-item .accordion-body {
+    background: #374151;
     color: #d1d5db;
 }
 
@@ -308,6 +344,48 @@ body.dark-mode .form-control {
 
 body.dark-mode .form-control::placeholder {
     color: #9ca3af;
+}
+
+body.dark-mode .footer {
+    background: #111827;
+}
+
+body.dark-mode .footer p,
+body.dark-mode .footer a {
+    color: #d1d5db;
+}
+
+body.dark-mode .footer-links a:hover {
+    color: var(--accent-color);
+}
+
+body.dark-mode .why-card {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .why-card h5 {
+    color: #fff;
+}
+
+body.dark-mode .why-card p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode .stats-section {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(14, 165, 233, 0.9) 100%);
+}
+
+body.dark-mode .virtual-tour-section {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(14, 165, 233, 0.9) 100%);
+}
+
+body.dark-mode .cookie-banner {
+    background: #1f2937;
+    border-color: #4b5563;
+}
+
+body.dark-mode .cookie-banner p {
+    color: #d1d5db;
 }
 
 /* Accessibility: focus-visible styles */
