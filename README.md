@@ -1,8 +1,8 @@
-# Prestige University Website
+# Kabul University Website
 
 A modern, professional university website built with HTML, CSS, Bootstrap 5, and JavaScript.
 
-![Prestige University](https://images.unsplash.com/photo-1562774053-701939374585?w=1200&q=80)
+![Kabul University](https://images.unsplash.com/photo-1562774053-701939374585?w=1200&q=80)
 
 ## 🌟 Live Demo
 
@@ -56,9 +56,9 @@ A modern, professional university website built with HTML, CSS, Bootstrap 5, and
 
 1. **Navigation** - Sticky navbar with smooth scroll links and dark mode toggle
 2. **Hero** - Full-screen hero with call-to-action buttons and video background option
-3. **About** - University history and key features
+3. **About** - University history and key features (Founded 1931)
 4. **Why Choose Us** - Icon grid highlighting university benefits
-5. **Programs** - Academic program cards with "Learn More" buttons
+5. **Programs** - Academic program cards (Computer Science, Law, Medical Sciences, Engineering, Economics, Education)
 6. **Statistics** - Key metrics with animated counters
 7. **Gallery** - Campus photo gallery with lightbox
 8. **Faculty** - Faculty member cards with social links
@@ -138,7 +138,7 @@ This project is for educational purposes.
 
 ## 👤 Author
 
-Created by Prestige University Web Team
+Created by Kabul University Web Team
 
 ## 🙏 Acknowledgments
 
@@ -147,3 +147,7 @@ Created by Prestige University Web Team
 - [Font Awesome](https://fontawesome.com) for icons
 - [AOS Library](https://michalsnik.github.io/aos/) for scroll animations
 - [Slick Carousel](https://kenwheeler.github.io/slick/) for the gallery slider
+
+## 🏛️ About Kabul University
+
+Kabul University, founded in 1931, is the oldest and largest university in Afghanistan. Located in the heart of Kabul, the university has been a beacon of higher education in the region for over 90 years. It offers programs in various fields including Computer Science, Law, Medical Sciences, Engineering, Economics, and Education.
