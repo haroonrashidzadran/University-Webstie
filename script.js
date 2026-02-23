@@ -217,6 +217,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===============================
+    // Close Mobile Menu on Nav Link Click
+    // ===============================
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse) {
+        document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                    if (bsCollapse) {
+                        bsCollapse.hide();
+                    }
+                    if (navbarToggler) navbarToggler.classList.remove('active');
+                }
+            });
+        });
+    }
+
+    // ===============================
     // Window Load Animation
     // ===============================
     window.addEventListener('load', function() {
