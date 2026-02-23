@@ -21,6 +21,7 @@
     --box-shadow-md: 0 20px 60px rgba(0, 0, 0, 0.15);
     --section-padding: 100px;
     --section-padding-mobile: 60px;
+    --line-height-base: 1.6;
 }
 
 * {
