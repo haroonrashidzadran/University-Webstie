@@ -238,11 +238,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===============================
-    // Window Load Animation
+    // Window Load Animation + Preloader
     // ===============================
     window.addEventListener('load', function() {
         // Add loaded class to body for any load animations
         document.body.classList.add('loaded');
+        // Hide preloader
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.classList.add('hidden');
+            setTimeout(() => preloader.remove(), 600);
+        }
     });
 
 });
