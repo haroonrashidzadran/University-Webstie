@@ -1031,6 +1031,18 @@ select:focus-visible {
     line-height: 1;
 }
 
+.testimonial-stars {
+    color: var(--accent-color);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-stars i {
+    margin-right: 2px;
+}
+
 .testimonial-text {
     font-style: italic;
     margin-bottom: 25px;
