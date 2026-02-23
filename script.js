@@ -45,6 +45,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Floating CTA show/hide
+    const floatingCta = document.getElementById('floatingCta');
+    window.addEventListener('scroll', function() {
+        if (floatingCta) {
+            if (window.scrollY > 400) {
+                floatingCta.classList.add('show');
+            } else {
+                floatingCta.classList.remove('show');
+            }
+        }
+    });
+
     // ===============================
     // Smooth Scrolling for Navigation Links
     // ===============================

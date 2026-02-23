@@ -1345,6 +1345,42 @@ select:focus-visible {
     transform: translateY(-3px);
 }
 
+/* Floating Apply Now CTA */
+.floating-cta {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    background: var(--accent-color);
+    color: var(--dark-color);
+    padding: 14px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+    transition: all 0.3s ease;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.floating-cta.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.floating-cta:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(30, 58, 138, 0.4);
+}
+
 /* Cookie Consent Banner */
 .cookie-banner {
     position: fixed;
