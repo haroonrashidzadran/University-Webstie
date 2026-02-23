@@ -68,6 +68,28 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(0);
 }
 
+/* Skip to Content Link (Accessibility) */
+.skip-to-content {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-color);
+    color: var(--dark-color);
+    padding: 12px 24px;
+    border-radius: var(--border-radius-sm);
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 10001;
+    transition: top 0.3s ease;
+}
+
+.skip-to-content:focus {
+    top: 10px;
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
 /* Reading Progress Bar */
 .reading-progress {
     position: fixed;
