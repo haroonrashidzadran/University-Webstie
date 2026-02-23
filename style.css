@@ -454,6 +454,65 @@ select:focus-visible {
     margin-bottom: 0;
 }
 
+/* Why Choose Us Section */
+.why-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.why-section .section-title h2,
+.why-section .section-title p {
+    color: #fff;
+}
+
+.why-section .section-title h2::after {
+    background: var(--accent-color);
+}
+
+.why-card {
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+    transition: transform var(--transition-speed) ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+}
+
+.why-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: var(--accent-color);
+    transition: background var(--transition-speed) ease;
+}
+
+.why-card:hover .why-icon {
+    background: var(--accent-color);
+    color: var(--dark-color);
+}
+
+.why-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.why-card p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin: 0;
+}
+
 /* FAQ Section */
 .faq-section {
     padding: 100px 0;
