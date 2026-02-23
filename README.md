@@ -4,6 +4,10 @@ A modern, professional university website built with HTML, CSS, Bootstrap 5, and
 
 ![Prestige University](https://images.unsplash.com/photo-1562774053-701939374585?w=1200&q=80)
 
+## 🌟 Live Demo
+
+**🔗 [Live Website](https://haroonrashidzadran.github.io/University-Webstie/)**
+
 ## 🌟 Features
 
 - **Responsive Design** - Fully responsive across all devices using Bootstrap 5
@@ -50,9 +54,11 @@ No build process or installation required - just open the HTML file!
 ## 📁 Project Structure
 
 ```
-University-Website/
-├── index.html      # Main HTML file (all code in single file)
-└── README.md       # This file
+University-Webstie/
+├── index.html      # Main HTML file
+├── style.css       # Custom styles
+├── script.js       # JavaScript functionality
+└── README.md      # This file
 ```
 
 ## 🎨 Customization
