@@ -238,6 +238,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===============================
+    // Dark Mode Toggle
+    // ===============================
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const darkModeIcon = darkModeToggle ? darkModeToggle.querySelector('i') : null;
+
+    // Restore preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        if (darkModeIcon) { darkModeIcon.classList.replace('fa-moon', 'fa-sun'); }
+    }
+
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+            if (darkModeIcon) {
+                darkModeIcon.classList.toggle('fa-moon', !isDark);
+                darkModeIcon.classList.toggle('fa-sun', isDark);
+            }
+        });
+    }
+
+    // ===============================
     // Window Load Animation + Preloader
     // ===============================
     window.addEventListener('load', function() {
