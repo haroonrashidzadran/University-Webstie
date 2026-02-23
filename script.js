@@ -1,4 +1,4 @@
-// Prestige University - Custom JavaScript
+// Kabul University - Custom JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
     
