@@ -2,11 +2,16 @@
 
 :root {
     --primary-color: #1e3a8a;
+    --primary-color-light: #2563eb;
     --secondary-color: #0ea5e9;
     --accent-color: #f59e0b;
+    --accent-color-hover: #d97706;
     --dark-color: #1f2937;
     --light-color: #f8fafc;
     --text-color: #4b5563;
+    --text-color-light: #6b7280;
+    --success-color: #10b981;
+    --error-color: #ef4444;
     --border-radius-sm: 10px;
     --border-radius-md: 20px;
     --border-radius-lg: 50px;
@@ -14,12 +19,19 @@
     --transition-speed-slow: 0.5s;
     --box-shadow-sm: 0 10px 40px rgba(0, 0, 0, 0.08);
     --box-shadow-md: 0 20px 60px rgba(0, 0, 0, 0.15);
+    --section-padding: 100px;
+    --section-padding-mobile: 60px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
