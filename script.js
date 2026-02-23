@@ -58,24 +58,68 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===============================
-    // Contact Form Submission
+    // Contact Form Submission with Inline Validation
     // ===============================
     const contactForm = document.getElementById('contactForm');
     
     if (contactForm) {
+        // Real-time validation
+        contactForm.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('blur', function() {
+                validateField(this);
+            });
+            input.addEventListener('input', function() {
+                if (this.classList.contains('is-invalid')) validateField(this);
+            });
+        });
+
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
+            let valid = true;
+            this.querySelectorAll('.form-control').forEach(input => {
+                if (!validateField(input)) valid = false;
+            });
+            if (!valid) return;
             
-            // Get form values
             const formData = new FormData(this);
             const name = formData.get('name') || this.querySelector('input[type="text"]')?.value;
             
-            // Show success message
-            alert(`Thank you${name ? ' ' + name : ''}! Your message has been sent successfully. We will get back to you soon.`);
+            // Show inline success message
+            const successMsg = document.createElement('div');
+            successMsg.className = 'alert alert-success mt-3';
+            successMsg.innerHTML = `<i class="fas fa-check-circle me-2"></i>Thank you${name ? ' ' + name : ''}! Your message has been sent successfully.`;
+            this.appendChild(successMsg);
+            setTimeout(() => successMsg.remove(), 5000);
             
-            // Reset form
             this.reset();
+            this.querySelectorAll('.form-control').forEach(el => el.classList.remove('is-valid', 'is-invalid'));
         });
+    }
+
+    function validateField(input) {
+        const value = input.value.trim();
+        let valid = true;
+        let message = '';
+
+        if (input.hasAttribute('required') && !value) {
+            valid = false;
+            message = 'This field is required.';
+        } else if (input.type === 'email' && value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+            valid = false;
+            message = 'Please enter a valid email address.';
+        }
+
+        input.classList.toggle('is-valid', valid && !!value);
+        input.classList.toggle('is-invalid', !valid);
+
+        let feedback = input.nextElementSibling;
+        if (!feedback || !feedback.classList.contains('invalid-feedback')) {
+            feedback = document.createElement('div');
+            feedback.className = 'invalid-feedback';
+            input.parentNode.insertBefore(feedback, input.nextSibling);
+        }
+        feedback.textContent = message;
+        return valid;
     }
 
     // ===============================
