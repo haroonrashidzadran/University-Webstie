@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===============================
     // Smooth Scrolling for Navigation Links
     // ===============================
+    const NAVBAR_HEIGHT = 80;
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
@@ -45,9 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    const targetTop = target.getBoundingClientRect().top + window.pageYOffset - NAVBAR_HEIGHT;
+                    window.scrollTo({
+                        top: targetTop,
+                        behavior: 'smooth'
                     });
                 }
             }
