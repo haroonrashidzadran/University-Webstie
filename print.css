@@ -1,0 +1,120 @@
+/* Prestige University - Print Stylesheet */
+
+@media print {
+    /* Hide non-essential elements */
+    #preloader,
+    .reading-progress,
+    .navbar,
+    .scroll-top,
+    .floating-cta,
+    .cookie-banner,
+    .hero-section,
+    .gallery-section,
+    .virtual-tour-section,
+    .footer-newsletter,
+    .footer-social,
+    .dark-mode-toggle,
+    .btn-primary-custom,
+    .btn-outline-custom,
+    .program-learn-btn,
+    .admission-btn,
+    .scholarship-btn,
+    .event-link,
+    .submit-btn,
+    .subscribe-btn {
+        display: none !important;
+    }
+
+    /* Reset colors for print */
+    body {
+        color: #000 !important;
+        background: #fff !important;
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #000 !important;
+        page-break-after: avoid;
+    }
+
+    /* Ensure sections print cleanly */
+    section {
+        padding: 20px 0 !important;
+        background: #fff !important;
+        page-break-inside: avoid;
+    }
+
+    .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* Show URLs for links */
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #555;
+    }
+
+    a[href^="#"]::after,
+    a[href^="javascript"]::after {
+        content: "";
+    }
+
+    /* Program cards */
+    .program-card,
+    .admission-card,
+    .testimonial-card,
+    .faculty-card,
+    .event-card,
+    .scholarship-card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        break-inside: avoid;
+    }
+
+    /* Stats section */
+    .stats-section {
+        background: #f5f5f5 !important;
+    }
+
+    .stat-number,
+    .stat-label {
+        color: #000 !important;
+    }
+
+    /* Footer */
+    .footer {
+        background: #f5f5f5 !important;
+        color: #000 !important;
+    }
+
+    .footer-logo,
+    .footer-title,
+    .footer-links a,
+    .footer-about p,
+    .footer-bottom p {
+        color: #000 !important;
+    }
+
+    /* Contact info */
+    .contact-info-icon {
+        background: #ddd !important;
+        color: #000 !important;
+    }
+
+    /* Images */
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+
+    /* Page breaks */
+    .about-section,
+    .programs-section,
+    .admissions-section,
+    .contact-section {
+        page-break-before: always;
+    }
+}
